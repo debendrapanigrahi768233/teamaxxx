@@ -4,21 +4,574 @@ import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const categoryItem = [
     {
-        "name": "pizza",
+        "name": "Chai flavors",
         "item": [
             {
-                "name": "Veg grill",
+                "name": "Regular chai",
+                "price": 15
+            },
+            {
+                "name": "Kadak ginger chai",
+                "price": 15
+            },
+            {
+                "name": "Masala chai",
+                "price": 20
+            },
+            {
+                "name": "Lemon chai",
+                "price": 20
+            },
+            {
+                "name": "Rose chai",
+                "price": 20
+            },{
+                "name": "Kulhad chai",
+                "price": 20
+            },
+
+        ]
+    },
+    {
+        "name": "Hot coffee",
+        "item": [
+            {
+                "name": "Hot coffee",
+                "price": 25
+            },
+            {
+                "name": "Max cappuccino",
+                "price": 49
+            },
+            {
+                "name": "Chocolate coffee",
+                "price": 49
+            },
+            {
+                "name": "Hazelnut coffee",
+                "price": 49
+            },
+
+        ]
+    },
+    {
+        "name": "Milkshakes",
+        "item": [
+            {
+                "name": "Vanilla",
+                "price": 59
+            },
+            {
+                "name": "Mango",
+                "price": 69
+            },
+            {
+                "name": "Strawberry",
+                "price": 69
+            },
+            {
+                "name": "Badam",
+                "price": 69
+            },
+            {
+                "name": "Banana",
+                "price": 69
+            },
+            {
+                "name": "Butterscotch",
+                "price": 79
+            },
+            {
+                "name": "Chocolate",
+                "price": 79
+            },
+            {
+                "name": "Pista shake",
+                "price": 79
+            },
+            {
+                "name": "Oreo",
+                "price": 79
+            },
+            {
+                "name": "Butter fruit / avocado",
+                "price": 89
+            },
+            {
+                "name": "Kitkat shake",
+                "price": 89
+            },
+            {
+                "name": "Dry Fruit milkshake",
+                "price": 89
+            },
+        ]
+    },
+    {
+        "name": "Mojito",
+        "item": [
+            {
+                "name": "Lemon juice (sweet/salt)",
+                "price": 29
+            },
+            {
+                "name": "Lemon soda",
+                "price": 39
+            },
+            {
+                "name": "Virgin mojito",
+                "price": 49
+            },
+            {
+                "name": "Blue curacao",
+                "price": 59
+            },
+            {
+                "name": "Watermelon mojito",
+                "price": 59
+            },
+            {
+                "name": "Green mint mojito",
+                "price": 59
+            },
+            {
+                "name": "Green apple mojito",
                 "price": 59
             }
         ]
     },
     {
-        "name": "tea",
+        "name": "Cold coffee",
         "item": [
             {
-                "name": "Regular",
-                "price": 15
-            }
+                "name": "Cold coffee",
+                "price": 69
+            },
+            {
+                "name": "Cold coffee with ice-cream",
+                "price": 89
+            },
+            {
+                "name": "Cold coffee with oreo",
+                "price": 89
+            },
+        ]
+    },
+    {
+        "name": "Thick shakes",
+        "item": [
+            {
+                "name": "Vanilla thickshake",
+                "price": 89
+            },
+            {
+                "name": "Butterscotch thickshake",
+                "price": 99
+            },
+            {
+                "name": "Caramel thickshake",
+                "price": 99
+            },
+            {
+                "name": "Kitkat thickshake",
+                "price": 109
+            },
+            {
+                "name": "Mango thickshake",
+                "price": 109
+            },
+            {
+                "name": "Strawberry thickshake",
+                "price": 119
+            },
+            {
+                "name": "Chocolate thickshake",
+                "price": 129
+            },
+            {
+                "name": "Death by chocolate",
+                "price": 129
+            },
+        ]
+    },
+    {
+        "name": "Lassi",
+        "item": [
+            {
+                "name": "Sweet Lassi",
+                "price": 49
+            },
+            {
+                "name": "Kulhad Lassi",
+                "price": 59
+            },
+            {
+                "name": "Mango Lassi",
+                "price": 59
+            },
+            {
+                "name": "Chocolate Lassi",
+                "price": 69
+            },
+            {
+                "name": "Dry fruit Lassi",
+                "price": 89
+            },
+        ]
+    },
+    
+    {
+        "name": "Burger Veg",
+        "item": [
+            {
+                "name": "Classic Burger",
+                "price": 69
+            },
+            {
+                "name": "Tandoori Burger",
+                "price": 79
+            },
+            {
+                "name": "BBQ Burger",
+                "price": 79
+            },
+            {
+                "name": "Peri Peri Burger",
+                "price": 79
+            },
+            {
+                "name": "Max Burger",
+                "price": 89
+            },
+        ]
+    },
+    {
+        "name": "Burger Paneer",
+        "item": [
+            {
+                "name": "Classic Burger",
+                "price": 89
+            },
+            {
+                "name": "Tandoori Burger",
+                "price": 99
+            },
+            {
+                "name": "BBQ Burger",
+                "price": 99
+            },
+            {
+                "name": "Peri Peri Burger",
+                "price": 99
+            },
+            {
+                "name": "Max Burger",
+                "price": 109
+            },
+        ]
+    },
+    {
+        "name": "Burger Chicken",
+        "item": [
+            {
+                "name": "Classic Burger",
+                "price": 79
+            },
+            {
+                "name": "Tandoori Burger",
+                "price": 89
+            },
+            {
+                "name": "BBQ Burger",
+                "price": 89
+            },
+            {
+                "name": "Peri Peri Burger",
+                "price": 89
+            },
+            {
+                "name": "Max Burger",
+                "price": 109
+            },
+            {
+                "name": "Fried Zinger Chicken Burger",
+                "price": 129
+            },
+        ]
+    },
+    {
+        "name": "Vadapav",
+        "item": [
+            {
+                "name": "Classic Vadapav",
+                "price": 39
+            },
+            {
+                "name": "Mumbai Vadapav",
+                "price": 49
+            },
+            {
+                "name": "Peri Peri Vadapav",
+                "price": 49
+            },
+            {
+                "name": "Cheese Vadapav",
+                "price": 59
+            },
+        ]
+    },
+    {
+        "name": "Maggi",
+        "item": [
+            {
+                "name": "Veg Masala Maggi",
+                "price": 49
+            },
+            {
+                "name": "Cheesy Maggi",
+                "price": 59
+            },
+            {
+                "name": "Kulhad Cheesy Maggi",
+                "price": 59
+            },
+            {
+                "name": "Butter Masala Maggi",
+                "price": 59
+            },
+            {
+                "name": "Egg Maggi",
+                "price": 69
+            },
+            {
+                "name": "Paneer Maggi",
+                "price": 69
+            },
+        ]
+    },
+    {
+        "name": "Falooda",
+        "item": [
+            {
+                "name": "Rose Falooda",
+                "price": 99
+            },
+            {
+                "name": "Mango Falooda",
+                "price": 99
+            },
+            {
+                "name": "Keshar Pista Falooda",
+                "price": 109
+            },
+            {
+                "name": "Strawberry Falooda",
+                "price": 109
+            },
+        ]
+    },
+    {
+        "name": "French Fries",
+        "item": [
+            {
+                "name": "Classic Fries",
+                "price": 59
+            },
+            {
+                "name": "Pepper Fries",
+                "price": 69
+            },
+            {
+                "name": "Masala Fries",
+                "price": 69
+            },
+            {
+                "name": "Peri Peri Fries",
+                "price": 79
+            },
+        ]
+    },
+    {
+        "name":"Ice Cream",
+        "item": [
+            {
+                "name": "Vanilla",
+                "price": 70
+            },
+            {
+                "name": "Strawberry",
+                "price": 70
+            },
+            {
+                "name": "Chocolate",
+                "price": 80
+            },
+            {
+                "name": "Kulfi",
+                "price": 80
+            },
+            {
+                "name": "Butterscotch",
+                "price": 80
+            },
+            {
+                "name": "Black Currant",
+                "price": 80
+            },
+            {
+                "name": "Fruit Salad With IceCream",
+                "price": 90
+            },
+            {
+                "name": "Sizzling Brown With IceCream",
+                "price": 120
+            },
+        ]
+    },
+    {
+        "name":"Sandwich",
+        "item": [
+            {
+                "name": "Veg Grill Sandwich",
+                "price": 59
+            },
+            {
+                "name": "Sweet Corn Sandwich",
+                "price": 69
+            },
+            {
+                "name": "Tandoori Grill Sandwich",
+                "price": 79
+            },
+            {
+                "name": "Max Paneer Sandwich",
+                "price": 79
+            },
+            {
+                "name": "Tandoori Paneer Sandwich",
+                "price": 89
+            },
+            {
+                "name": "Chicken Grill Sandwich",
+                "price": 89
+            },
+            {
+                "name": "Tandoori Chicken Sandwich",
+                "price": 89
+            },
+        ]
+    },
+    {
+        "name":"Pasta Veg",
+        "item": [
+            {
+                "name": "White Sauce Pasta",
+                "price": 99
+            },
+            {
+                "name": "Red Sauce Pasta",
+                "price": 89
+            },
+        ]
+    },
+    {
+        "name":"Pasta Non-Veg",
+        "item": [
+            {
+                "name": "White Sauce Pasta",
+                "price": 119
+            },
+            {
+                "name": "Red Sauce Pasta",
+                "price": 109
+            },
+        ]
+    },
+    {
+        "name":"Pizza",
+        "item": [
+            {
+                "name": "Veg Farmhouse Pizza",
+                "price": 149
+            },
+            {
+                "name": "Paneer Pizza",
+                "price": 139
+            },
+            {
+                "name": "Peri Peri chicken Pizza",
+                "price": 169
+            },
+            {
+                "name": "Chicken Tikka Pizza",
+                "price": 149
+            },
+        ]
+    },
+    
+    {
+        "name":"Max Pro Snacks",
+        "item": [
+            {
+                "name": "Veg cheese balls",
+                "price": 69
+            },
+            {
+                "name": "Spiral Potato Twister",
+                "price": 69
+            },
+            {
+                "name": "Peri Peri Potato Twister",
+                "price": 79
+            },
+            {
+                "name": "Chicken Cutlet",
+                "price": 79
+            },
+            {
+                "name": "Fried Momos",
+                "price": 80
+            },
+            {
+                "name": "Chicken Cheese Balls",
+                "price": 89
+            },
+            {
+                "name": "Chicken Popcorn",
+                "price": 89
+            },
+            {
+                "name": "Fried chicken momos",
+                "price": 89
+            },
+            {
+                "name": "Kurkure veg momos",
+                "price": 119
+            },
+            {
+                "name": "Shezwan veg momos",
+                "price": 119
+            },
+            {
+                "name": "Kurkure chicken momos",
+                "price": 129
+            },
+            {
+                "name": "Shezwan Chicken momos",
+                "price": 129
+            },
+            {
+                "name": "Crunchy Chicken Wings",
+                "price": 139
+            },
+            {
+                "name": "Chicken Strips",
+                "price": 149
+            },
+            {
+                "name": "Peri Peri Chicken Strips",
+                "price": 159
+            },
         ]
     },
 ];
